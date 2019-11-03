@@ -7,56 +7,59 @@
     android:orientation="vertical"
     tools:context=".button_menu">
 
-    <com.getbase.floatingactionbutton.FloatingActionsMenu
-        android:id="@+id/btnmenu"
+<com.getbase.floatingactionbutton.FloatingActionsMenu
+    android:id="@+id/btnmenu"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom|end"
+    android:layout_margin="@dimen/fab_labels_margin"
+    app:fab_addButtonColorNormal="#FF8922"
+    app:fab_addButtonColorPressed="#FF6822"
+    app:fab_labelStyle="@style/etiqueta">
+
+
+    <com.getbase.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnnumb1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
-        android:layout_margin="@dimen/fab_labels_margin"
-        app:fab_addButtonColorNormal="@color/colorPrimary"
-        app:fab_addButtonColorPressed="@color/colorPrimaryDark"
-        app:fab_labelStyle="@style/etiqueta">
+        android:src="@drawable/ic_map_black_24dp"
+        app:fab_colorNormal="#00D47F"
+        app:fab_colorPressed="@color/colorPrimaryDark"
+        app:fab_size="mini"
+        app:fab_title="Map" />
 
-        <com.getbase.floatingactionbutton.AddFloatingActionButton
-            android:id="@+id/btnnumb1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ic_map_black_24dp"
-            app:fab_colorNormal="#fff"
-            app:fab_colorPressed="@color/colorPrimaryDark"
-            app:fab_size="mini"
-            app:fab_title="Map" />
+    <com.getbase.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnnumb2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_video_label_black_24dp"
+        app:fab_colorNormal="#E73104"
+        app:fab_colorPressed="@color/cardview_dark_background"
+        app:fab_size="mini"
+        app:fab_title="Video" />
 
-        <com.getbase.floatingactionbutton.AddFloatingActionButton
-            android:id="@+id/btnnumb2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ic_video_label_black_24dp"
-            app:fab_colorNormal="#fff"
-            app:fab_colorPressed="@color/colorPrimaryDark"
-            app:fab_size="mini"
-            app:fab_title="Video" />
+    <com.getbase.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnnumb3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_poll_black_24dp"
+        app:fab_colorNormal="#12D3DA"
+        app:fab_colorPressed="@color/cardview_dark_background"
+        app:fab_size="mini"
+        app:fab_title="Statistics" />
 
-        <com.getbase.floatingactionbutton.AddFloatingActionButton
-            android:id="@+id/btnnumb3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ic_poll_black_24dp"
-            app:fab_colorNormal="#fff"
-            app:fab_colorPressed="@color/colorPrimaryDark"
-            app:fab_size="mini"
-            app:fab_title="Statistics" />
+    <com.getbase.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnnumb4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_perm_contact_calendar_black_24dp"
+        app:fab_colorNormal="#E2FF3B"
+        app:fab_colorPressed="@color/cardview_dark_background"
+        app:fab_size="mini"
+        app:fab_title="Calendar" />
 
-        <com.getbase.floatingactionbutton.AddFloatingActionButton
-            android:id="@+id/btnnumb4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ic_perm_contact_calendar_black_24dp"
-            app:fab_colorNormal="#fff"
-            app:fab_colorPressed="@color/colorPrimaryDark"
-            app:fab_size="mini"
-            app:fab_title="Calendar" />
+</com.getbase.floatingactionbutton.FloatingActionsMenu>
 
-    </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
