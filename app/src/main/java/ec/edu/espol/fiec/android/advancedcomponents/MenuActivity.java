@@ -25,9 +25,9 @@ public class MenuActivity extends AppCompatActivity {
             case R.id.btnMap:
               intent = new Intent(MenuActivity.this, MapActivity.class);
               break;
-//            case R.id.btnCalendar:
-//                intent = new Intent(MenuActivity.this, MapActivity.class);
-//                break;
+            case R.id.btnCalendar:
+                intent = new Intent(MenuActivity.this, CalendarActivity.class);
+                break;
             case R.id.btnVideo:
                 intent = new Intent(MenuActivity.this, VideoActivity.class);
                 break;
