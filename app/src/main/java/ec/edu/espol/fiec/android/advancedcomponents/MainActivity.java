@@ -16,13 +16,12 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        siguiente=(Button)findViewById(R.id.button);
+        siguiente = findViewById(R.id.button);
 
         siguiente.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-                Intent siguiente=new Intent(MainActivity.this, button_menu.class);
+                Intent siguiente = new Intent(MainActivity.this, MenuActivity.class);
                 startActivity(siguiente);
             }
         });
