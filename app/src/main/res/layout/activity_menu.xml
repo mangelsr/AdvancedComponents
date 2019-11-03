@@ -8,7 +8,7 @@
     tools:context=".MenuActivity">
 
 <com.getbase.floatingactionbutton.FloatingActionsMenu
-    android:id="@+id/btnmenu"
+    android:id="@+id/btnMenu"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:layout_gravity="bottom|end"
@@ -19,40 +19,44 @@
 
 
     <com.getbase.floatingactionbutton.FloatingActionButton
-        android:id="@+id/btnnumb1"
+        android:id="@+id/btnMap"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/ic_map_black_24dp"
+        android:onClick="navigate"
         app:fab_colorNormal="#00D47F"
         app:fab_colorPressed="@color/colorPrimaryDark"
         app:fab_size="mini"
         app:fab_title="Map" />
 
     <com.getbase.floatingactionbutton.FloatingActionButton
-        android:id="@+id/btnnumb2"
+        android:id="@+id/btnVideo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/ic_video_label_black_24dp"
+        android:onClick="navigate"
         app:fab_colorNormal="#E73104"
         app:fab_colorPressed="@color/cardview_dark_background"
         app:fab_size="mini"
         app:fab_title="Video" />
 
     <com.getbase.floatingactionbutton.FloatingActionButton
-        android:id="@+id/btnnumb3"
+        android:id="@+id/btnStatistics"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/ic_poll_black_24dp"
+        android:onClick="navigate"
         app:fab_colorNormal="#12D3DA"
         app:fab_colorPressed="@color/cardview_dark_background"
         app:fab_size="mini"
         app:fab_title="Statistics" />
 
     <com.getbase.floatingactionbutton.FloatingActionButton
-        android:id="@+id/btnnumb4"
+        android:id="@+id/btnCalendar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/ic_perm_contact_calendar_black_24dp"
+        android:onClick="navigate"
         app:fab_colorNormal="#E2FF3B"
         app:fab_colorPressed="@color/cardview_dark_background"
         app:fab_size="mini"
