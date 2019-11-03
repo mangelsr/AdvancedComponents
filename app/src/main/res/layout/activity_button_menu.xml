@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,23 +7,56 @@
     android:orientation="vertical"
     tools:context=".button_menu">
 
-
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/floatingActionButton"
+    <com.getbase.floatingactionbutton.FloatingActionsMenu
+        android:id="@+id/btnmenu"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:clickable="true"
-        app:backgroundTint="#00BCD4"
-        app:srcCompat="@drawable/ic_add_black_24dp"
-        tools:ignore="MissingConstraints,VectorDrawableCompat" />
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_labels_margin"
+        app:fab_addButtonColorNormal="@color/colorPrimary"
+        app:fab_addButtonColorPressed="@color/colorPrimaryDark"
+        app:fab_labelStyle="@style/etiqueta">
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dip"
-        android:layout_marginBottom="40dip"
-        android:layout_gravity="center_horizontal"
-        android:text="Welcome to the Menu \nYou have three options" />
-</LinearLayout>
+        <com.getbase.floatingactionbutton.AddFloatingActionButton
+            android:id="@+id/btnnumb1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_map_black_24dp"
+            app:fab_colorNormal="#fff"
+            app:fab_colorPressed="@color/colorPrimaryDark"
+            app:fab_size="mini"
+            app:fab_title="Map" />
+
+        <com.getbase.floatingactionbutton.AddFloatingActionButton
+            android:id="@+id/btnnumb2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_video_label_black_24dp"
+            app:fab_colorNormal="#fff"
+            app:fab_colorPressed="@color/colorPrimaryDark"
+            app:fab_size="mini"
+            app:fab_title="Video" />
+
+        <com.getbase.floatingactionbutton.AddFloatingActionButton
+            android:id="@+id/btnnumb3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_poll_black_24dp"
+            app:fab_colorNormal="#fff"
+            app:fab_colorPressed="@color/colorPrimaryDark"
+            app:fab_size="mini"
+            app:fab_title="Statistics" />
+
+        <com.getbase.floatingactionbutton.AddFloatingActionButton
+            android:id="@+id/btnnumb4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_perm_contact_calendar_black_24dp"
+            app:fab_colorNormal="#fff"
+            app:fab_colorPressed="@color/colorPrimaryDark"
+            app:fab_size="mini"
+            app:fab_title="Calendar" />
+
+    </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
