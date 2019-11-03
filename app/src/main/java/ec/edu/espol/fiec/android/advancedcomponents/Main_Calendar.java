@@ -19,7 +19,7 @@ public class Main_Calendar extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_main__calendar);
 
         HomeCollection.date_collection_arr=new ArrayList<HomeCollection>();
         HomeCollection.date_collection_arr.add( new HomeCollection("2019-07-08" ,"Diwali","Holiday","this is holiday"));
@@ -28,6 +28,7 @@ public class Main_Calendar extends AppCompatActivity {
         HomeCollection.date_collection_arr.add( new HomeCollection("2019-08-08" ,"Republic Unian","Holiday","this is holiday"));
         HomeCollection.date_collection_arr.add( new HomeCollection("2019-11-04" ,"Feriado","Holiday","this is holiday"));
         HomeCollection.date_collection_arr.add( new HomeCollection("2019-11-03" ,"Feriado","Holiday","this is holiday"));
+        HomeCollection.date_collection_arr.add( new HomeCollection("2019-11-03" ,"TAREA DE AMST TA3","Tarea","Trabajo Autónomo 3-AdvancedComponents"));
         HomeCollection.date_collection_arr.add( new HomeCollection("2019-11-02" ,"Feriado","Holiday","this is holiday"));
         HomeCollection.date_collection_arr.add( new HomeCollection("2019-11-01" ,"Feriado","Holiday","this is holiday"));
         HomeCollection.date_collection_arr.add( new HomeCollection("2020-01-16" ,"Dasahara","Holiday","this is holiday"));
